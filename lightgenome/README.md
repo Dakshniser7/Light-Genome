@@ -67,14 +67,15 @@ at log-sd 0.25, 0.5 and 1 (E6).
 **RESULT 4 – multiplexing (E5).** With two colours driving two site-sets and no cross-talk, a site-resolved readout reaches 2.0 bits at N = 30 while a pooled
 count tops out at 1.5 bits (outcomes ¼, ½, ¼). Cross-talk χ = 0.3 lowers the resolved readout to 1.86 bits at N = 100, and at χ = 0.6 it falls to 1.33.
 
-## Assumptions and limits you must carry into the paper
-1. **p_d = 0.3, the Calling Cards peak rates, and all noise levels are my assumptions**, not values taken from R28 or any cited paper; I did not have a cited number for them.
-2. **The L1 activity gain r is a free parameter.** R12 and R20 are suggestive only; there is no measured transfer function from firing to insertion rate. The grid (r = 0.1–1) is a sweep, not a finding.
+## Assumptions and limits
+1. **p_d = 0.3, the Calling Cards peak rates, and all noise levels are assumed values**, not taken from Moudgil et al. (2020) or any other cited paper. Measured values should replace them when available.
+2. **The L1 activity gain r is a free parameter.** Muotri et al. (2010) and Bedrosian et al. (2018) are suggestive only; there is no measured transfer function from firing to insertion rate. The grid (r = 0.1–1) is a sweep, not a finding.
 3. L1 baseline is treated as private noise, except in E3a where a fraction φ is clonal. That moves background from private to shared, so the L1 clonal panel conflates two effects.
 4. Cells are conditionally independent given protocol, apart from the explicit clonal and shared terms. Readout is a **count per cell** (site identity only in E5).
 5. CAST-like clones are not modelled; E3a covers Poisson recorders only.
-6. **No kinetics.** Transposition is treated as integrating over the whole window, so the "hours to days" statement in the abstract still needs a cited source.
-7. The biphasic response and its ξ are hypothetical (motivated by overproduction inhibition in R25).
+6. **No kinetics.** Transposition is treated as integrating over the whole stimulation window. Any statement about the timescale needs a cited source.
+(The old line mentioned the abstract, which no longer applies to this wording.)
+7. The biphasic response and its ξ are hypothetical (motivated by overproduction inhibition reported for Sleeping Beauty by Wu et al., 2006).
 8. Shared-nuisance runs are limited to N ≤ 1,000 and one random shared variable at a time; larger N would need a finer grid.
 9. N-for-90 % values are log-interpolated from a coarse N grid with Monte Carlo noise, so treat them as ±20–30 %.
 10. Capacities are over a dose range of 0–3 in units of ξ with the stated noise. Different ranges give different numbers.
