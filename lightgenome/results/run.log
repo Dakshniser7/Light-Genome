@@ -1,0 +1,55 @@
+running e1 ...
+  e1 rate 0.6
+  e1 rate 1.5
+  e1 rate 3.0
+  e1 rate 7.0
+  e1 rate 13.7
+e1 done in 30s
+running e2 ...
+  e2 cc 0.3
+  e2 cc 1.0
+  e2 cc 3.0
+  e2 cc 10.0
+  e2 cast p0.1|M1
+  e2 cast p0.1|M4
+  e2 cast p0.1|M14
+  e2 cast p0.25|M1
+  e2 cast p0.25|M4
+  e2 cast p0.25|M14
+e2 done in 20s
+running e3a ...
+  e3a cc mu 0.0
+  e3a cc mu 1.0
+  e3a cc mu 5.0
+  e3a l1 phi 0.0
+  e3a l1 phi 0.5
+  e3a l1 phi 0.9
+e3a done in 14s
+running e3b ...
+  e3b saturating
+  e3b biphasic
+e3b done in 0s
+running e4 ...
+  e4 cc 0 0
+  e4 cc 0 0.25
+  e4 cc 0 0.5
+  e4 cc 0 1.0
+  e4 cc 0.25 0
+  e4 cc 0.5 0
+  e4 l1 0 0
+  e4 l1 0 0.35
+  e4 l1 0 0.7
+  e4 l1 0 1.4
+e4 done in 49s
+running e5 ...
+  e5 chi 0.0
+  e5 chi 0.1
+  e5 chi 0.3
+  e5 chi 0.6
+e5 done in 1s
+running e6 ...
+  e6 sigma 0.0
+  e6 sigma 0.25
+  e6 sigma 0.5
+  e6 sigma 1.0
+e6 done in 254s

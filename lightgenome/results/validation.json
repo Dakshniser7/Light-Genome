@@ -1,0 +1,145 @@
+{
+ "checks": [
+  {
+   "test": "likelihood rows sum to 1",
+   "pass": true,
+   "detail": "min=1.000000000"
+  },
+  {
+   "test": "likelihood rows sum to 1",
+   "pass": true,
+   "detail": "min=1.000000000"
+  },
+  {
+   "test": "likelihood rows sum to 1",
+   "pass": true,
+   "detail": "min=1.000000000"
+  },
+  {
+   "test": "mechanistic sampler matches likelihood table (poisson)",
+   "pass": true,
+   "detail": "max|diff|=0.0021"
+  },
+  {
+   "test": "mechanistic sampler matches likelihood table (site-capped)",
+   "pass": true,
+   "detail": "max|diff|=2.74 SE"
+  },
+  {
+   "test": "Poisson thinning: mean = p_d*lam",
+   "pass": true,
+   "detail": "mean=2.999"
+  },
+  {
+   "test": "Poisson thinning: Fano factor = 1",
+   "pass": true,
+   "detail": "Fano=0.998"
+  },
+  {
+   "test": "no activity coupling -> exact MI = 0",
+   "pass": true,
+   "detail": "0.00e+00"
+  },
+  {
+   "test": "no activity coupling -> MC MI(N=10) ~ 0",
+   "pass": true,
+   "detail": "-0.0000+-0.0000"
+  },
+  {
+   "test": "deterministic channel -> MI -> log2 K",
+   "pass": true,
+   "detail": "1.9997 bits (max 2)"
+  },
+  {
+   "test": "Blahut-Arimoto: binary symmetric channel",
+   "pass": true,
+   "detail": "0.531004 vs 0.531004"
+  },
+  {
+   "test": "Blahut-Arimoto: Z-channel",
+   "pass": true,
+   "detail": "0.321928 vs 0.321928"
+  },
+  {
+   "test": "MC MI (N=1) matches exact single-cell MI",
+   "pass": true,
+   "detail": "MC 0.1401+-0.0022, exact 0.1395"
+  },
+  {
+   "test": "plug-in MI is biased upward at n=200",
+   "pass": true,
+   "detail": "bias=+0.0312 (exact 0.0710)"
+  },
+  {
+   "test": "Miller-Madow reduces |bias|",
+   "pass": true,
+   "detail": "bias=+0.0150"
+  },
+  {
+   "test": "shuffle correction reduces |bias|",
+   "pass": true,
+   "detail": "bias=-0.0015"
+  },
+  {
+   "test": "population MI equals MI of the sufficient statistic (total count)",
+   "pass": true,
+   "detail": "MC 0.3463+-0.0055, exact 0.3460"
+  },
+  {
+   "test": "clone-aware likelihood matches brute-force sum",
+   "pass": true,
+   "detail": "max|dlogL|=8.88e-16"
+  },
+  {
+   "test": "clone-aware decoder >= naive decoder (paired data)",
+   "pass": true,
+   "detail": "optimal 1.206, naive -0.466"
+  },
+  {
+   "test": "MI never exceeds log2 K",
+   "pass": true,
+   "detail": "1.206 <= 2"
+  },
+  {
+   "test": "without clonality both decoders coincide",
+   "pass": true,
+   "detail": "1.2630 vs 1.2630"
+  },
+  {
+   "test": "shared-gain marginalisation (N=1) matches single-cell exact",
+   "pass": true,
+   "detail": "MC 0.1356+-0.0022, exact 0.1359"
+  },
+  {
+   "test": "shared-nuisance integration converged (grid spacing halved, N=300)",
+   "pass": true,
+   "detail": "0.2731 vs 0.2731"
+  },
+  {
+   "test": "biphasic response peaks at x = xi with value 1",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "saturating response is monotone",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "capacity (dose grid) >= MI of uniform 4-protocol input",
+   "pass": true,
+   "detail": "C=0.243 >= I=0.140"
+  },
+  {
+   "test": "MI non-decreasing in N",
+   "pass": true,
+   "detail": "[0.158 0.351 0.791 0.963]"
+  }
+ ],
+ "estimator_bias_bits": {
+  "plugin": 0.03118553690364903,
+  "miller_madow": 0.015015329987018558,
+  "shuffle": -0.001547433035206991
+ },
+ "estimator_exact_bits": 0.0709746445266596
+}
