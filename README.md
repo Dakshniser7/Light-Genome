@@ -73,8 +73,7 @@ count tops out at 1.5 bits (outcomes ¼, ½, ¼). Cross-talk χ = 0.3 lowers the
 3. L1 baseline is treated as private noise, except in E3a where a fraction φ is clonal. That moves background from private to shared, so the L1 clonal panel conflates two effects.
 4. Cells are conditionally independent given protocol, apart from the explicit clonal and shared terms. Readout is a **count per cell** (site identity only in E5).
 5. CAST-like clones are not modelled; E3a covers Poisson recorders only.
-6. **No kinetics.** Transposition is treated as integrating over the whole stimulation window. Any statement about the timescale needs a cited source.
-(The old line mentioned the abstract, which no longer applies to this wording.)
+6. **No kinetics.** Transposition is treated as integrating over the whole stimulation window. 
 7. The biphasic response and its ξ are hypothetical (motivated by overproduction inhibition reported for Sleeping Beauty by Wu et al., 2006).
 8. Shared-nuisance runs are limited to N ≤ 1,000 and one random shared variable at a time; larger N would need a finer grid.
 9. N-for-90 % values are log-interpolated from a coarse N grid with Monte Carlo noise, so treat them as ±20–30 %.
